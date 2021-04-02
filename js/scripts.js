@@ -29,13 +29,16 @@ function resetApplication() {
 }
 
 function generateSuccessHtml(resultsArray) {
-  let html = `<div class="container justify-content-center text-center m-2 p-2"><ul>`
+  let html = `<div class="container"><div class="row text-center justify-content-center"><h2 data-toggle="tooltip" data-placement="top" title="Specification Asks For Results From 0 Up To And Including The Number Entered So There Will Always Be One More Beep Boop Phrase Than The Number Entered.">${resultsArray.length} Beep Boops!</h2></div><div class="row justify-content-center text-center results-container">`
   resultsArray.forEach(function(element, index) {
-    html += `<li class="justify-content-center">${element}</li>`
+    html += `<div class="col-12 btn-outline-info result-individual">${element}</div>`
   })
-  html += "</ul></div>"
-  console.log(html)
+  html += "</div></div>"
   return html
+}
+
+function enableTooltips() {
+  $('[data-toggle="tooltip"]').tooltip()
 }
 
 $(document).ready(function() {
@@ -52,6 +55,7 @@ $(document).ready(function() {
     } else {
       resetApplication()
       $(".results").html(generateSuccessHtml(result)).show()
+      enableTooltips()
     }
   })
 
