@@ -21,7 +21,7 @@ A user should be able to enter a new number and see new results over and over ag
 
 > Example: If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5
 ---
-### Tech Stack:
+### Tech Stack
 1. HTML5+CSS3
 2. JavaScript/ES6+
 3. jQuery
@@ -33,7 +33,7 @@ A user should be able to enter a new number and see new results over and over ag
 [https://usarneme.github.io/mr_roboger_neighborhood](https://usarneme.github.io/mr_roboger_neighborhood)
 
 ---
-### Installation Instructions:
+### Installation Instructions
 1. Clone this repo: 
 
 ```sh
@@ -59,13 +59,24 @@ cd mr_roboger_neighborhood
 Describe: beepBoop()
 
 ```
-Test: "It should return an array with a 0 if the number 0 is inputted"
-Code: beepBoop(0);
-Expected Output: 0
+Test: "It should return an error if a non-number string is input"
+Code: beepBoop("howdy partner")
+Expected Output: Error("You must submit a number. Please try again.")
 
-Test: "It should return an array with a 0 if the number 0 is inputted"
-Code: beepBoop(0);
-Expected Output: 0
+Test: "It should return an error if a non-number alphanumeric string is input"
+Code: beepBoop("123abc")
+Expected Output: Error("You must submit a number. Please try again.")
+
+Test: "It should return 0 string if 0 string is input"
+Code: beepBoop("0")
+Expected Output: "0"
+
+Test: "It should return "0,1" if "1" is input"
+Code: beepBoop("1")
+Expected Output: "0,1"
+
+
+
 ```
 ---
 ### License is GPLv3 and I make no claim to copyright. 
