@@ -27,31 +27,46 @@ A user should be able to enter a new number and see new results over and over ag
 3. jQuery
 4. Bootstrap
 ---
-### Instructions:
-1. Clone this repo: `git clone <this repo url>`
-2. Enter new directory `cd <repo dir name>`
-3. Begin a web server in order to render index.html, for example:
+
+### Project Build Available At: 
+
+[https://usarneme.github.io/mr_roboger_neighborhood](https://usarneme.github.io/mr_roboger_neighborhood)
+
+---
+### Installation Instructions:
+1. Clone this repo: 
+
+```sh
+git clone https://github.com/Usarneme/mr_roboger_neighborhood
+```
+
+2. Enter new directory 
+```sh
+cd mr_roboger_neighborhood
+```
+3. Begin a web server in order to interact with and view index.html. For example:
   * If you have python, you can use: `python2 -m SimpleHTTPServer 8080` in the project root directory
   * Or you can use [VScode LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
   * Or whatever server you know how to run/prefer to use
 4. Open your browser and navigate to the webserver location (for example: localhost:8080)
 ---
 ### Known Issues:
-1. None know.
+1. None known.
 2. Please open a pull request if you have any issues!
 ---
 ### Test Suite/Specification
 
 Describe: beepBoop()
 
-  Test: "It should return an array with a 0 if the number 0 is inputted"
-  Code: beepBoop(0);
-  Expected Output: 0
+```
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Code: beepBoop(0);
+Expected Output: 0
 
-  Test: "It should return an array with a 0 if the number 0 is inputted"
-  Code: beepBoop(0);
-  Expected Output: 0
-
+Test: "It should return an array with a 0 if the number 0 is inputted"
+Code: beepBoop(0);
+Expected Output: 0
+```
 ---
 ### License is GPLv3 and I make no claim to copyright. 
 <br />
