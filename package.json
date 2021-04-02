@@ -1,0 +1,28 @@
+{
+  "name": "mr_roboger_neighborhood",
+  "version": "1.0.0",
+  "description": "A web application that takes input of a number and displays a series of numbers or phrases depending on the value at each index.",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Usarneme/mr_roboger_neighborhood.git"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "jquery",
+    "bootstrap",
+    "fred",
+    "robot",
+    "rogers"
+  ],
+  "author": "Tom/Usarneme",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Usarneme/mr_roboger_neighborhood/issues"
+  },
+  "homepage": "https://github.com/Usarneme/mr_roboger_neighborhood#readme"
+}
