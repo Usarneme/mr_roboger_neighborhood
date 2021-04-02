@@ -4,7 +4,8 @@
   "description": "A web application that takes input of a number and displays a series of numbers or phrases depending on the value at each index.",
   "main": "index.html",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test-watch": "jest --watch"
   },
   "repository": {
     "type": "git",
