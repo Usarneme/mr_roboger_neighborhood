@@ -31,6 +31,10 @@ function resetSounds() {
   document.getElementById("neighbor").currentTime = 0
 }
 
+function reverseOutput(resultsArray) {
+  return resultsArray.reverse()
+}
+
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault()
@@ -48,10 +52,15 @@ $(document).ready(function() {
     } else {
       resetApplication()
       $(".results").html(generateSuccessHtml(result)).show()
+      $(".reverse-container").show()
       enableTooltips()
+      $("#reverseButton").click(function() {
+        const reversedResult = reverseOutput(result)
+        const reversedHtml = generateSuccessHtml(reversedResult)
+        resetApplication()
+        $(".results").html(reversedHtml).show()
+      })
     }
   })
-
   $("#resetButton").click(resetApplication)
 })
-
