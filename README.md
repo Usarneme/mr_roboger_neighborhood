@@ -67,13 +67,13 @@ Test: "It should return an error if a non-number alphanumeric string is input"
 Code: beepBoop("123abc")
 Expected Output: Error("You must submit a number. Please try again.")
 
-Test: "It should return 0 string if 0 string is input"
+Test: "It should return [0] array if "0" string is input"
 Code: beepBoop("0")
-Expected Output: "0"
+Expected Output: [0]
 
-Test: "It should return "0,1" if "1" is input"
+Test: "It should return [0,Beep] if "1" is input"
 Code: beepBoop("1")
-Expected Output: "0,1"
+Expected Output: [0,"Beep"]
 
 
 
