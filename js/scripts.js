@@ -18,11 +18,30 @@ function enableTooltips() {
   $('[data-toggle="tooltip"]').tooltip()
 }
 
+function playSound(id) {
+  document.getElementById(id).play()
+}
+
+function resetSounds() {
+  document.getElementById("beep").pause()
+  document.getElementById("beep").currentTime = 0
+  document.getElementById("boop").pause()
+  document.getElementById("boop").currentTime = 0
+  document.getElementById("neighbor").pause()
+  document.getElementById("neighbor").currentTime = 0
+}
+
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault()
     const userInput = $("#numberInput").val().toString()
     const result = beepBoop(userInput)
+    resetSounds()
+    const lastResult = result[result.length - 1]
+    if (lastResult === "Beep!") playSound("beep")
+    if (lastResult === "Boop!") playSound("boop")
+    if (lastResult === "Won't you be my neighbor?") playSound("neighbor")
+
     if (result instanceof Error) {
       const errorHtml = `<div class="alert alert-danger" role="alert">${result}</div>`
       $(".results").html(errorHtml).show()
