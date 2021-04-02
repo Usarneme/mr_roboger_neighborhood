@@ -56,9 +56,12 @@ cd mr_roboger_neighborhood
 ---
 ### Test Suite/Specification
 
-Describe: beepBoop()
+> See also [the Jest Test File](https://github.com/Usarneme/mr_roboger_neighborhood/blob/main/__tests__/scripts.spec.js) for Jest Test Suite which includes 14 passing tests. View Test Results from Project Directory by Running `yarn run test` or if you prefer npm `npm run test`
 
 ```
+Describe: beepBoop()
+
+
 Test: "It should return an error if a non-number string is input"
 Code: beepBoop("howdy partner")
 Expected Output: Error("You must submit a number. Please try again.")
