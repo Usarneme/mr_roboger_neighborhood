@@ -51,7 +51,7 @@ cd mr_roboger_neighborhood
 4. Open your browser and navigate to the webserver location (for example: localhost:8080)
 ---
 ### Known Issues:
-1. None known.
+1. It will work with very large numbers but slowly. I'd recommend not going above 100'000 Beep Boops! Anything above that will crawl and maybe freeze up your browser for a little bit depending on hardware. 
 2. Please open a pull request if you have any issues!
 ---
 ### Test Suite/Specification

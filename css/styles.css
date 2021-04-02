@@ -4,8 +4,14 @@
   font-size: 16px;
 }
 
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg,#f393ed,#f393ed 35%,#5ae6e2);
+}
+
 body, body > * {
   font-size: 1.5rem;
+  color: #eff;
 }
 
 ul, li {
@@ -20,6 +26,7 @@ ul, li {
 .result-individual {
   border: 2px solid lightslategray;
   border-bottom: none;
+  background: rgba(255,255,255,0.25);
 }
 
 .result-individual:last-of-type {
@@ -29,6 +36,10 @@ ul, li {
 
 .reverse-container {
   display: none;
+}
+
+.btn.btn-outline-info, .jumbotron {
+  background: rgba(255,255,255,0.25);
 }
 
 @media all and (min-width: 769px) {

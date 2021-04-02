@@ -1,8 +1,8 @@
 function beepBoop(number) {
   // Confirm the number is a number and not alphanum or something else
   if (Number.isNaN(Number(number)) && number !== "0") return new Error("You must submit a number. Please try again.")
-  if (number === "0") return [0]
   const outputArray = [0]
+  if (number === "0") return outputArray
 
   for (let index = 1; index <= Number(number); index += 1) {
     const numbers = (""+index).split("")
