@@ -79,12 +79,33 @@ Test: "It should return [0,Beep,Boop] if "2" is input"
 Code: beepBoop("2")
 Expected Output: [0,"Beep","Boop"]
 
-
-Test: "It should return [0,Beep] if "1" is input"
+Test: "It should return [0,Beep,Boop,Won't you be my neighbor] if "3" is input"
 Code: beepBoop("1")
-Expected Output: [0,"Beep"]
+Expected Output: [0,"Beep","Boop","Won't you be my neighbor?"]
 
+Test: "It should return [0,Beep,Boop,Won't you be my neighbor,4,5] if "5" is input"
+Code: beepBoop("1")
+Expected Output: [ 0, 'Beep!', 'Boop!', "Won't your be my neighbor?", 4, 5 ]
 
+Test: "It should return [ 0, 'Beep!', 'Boop!', "Won't your be my neighbor?", 4, 5, 6, 7, 8, 9 ] if "9" is input"
+Code: beepBoop("9")
+Expected Output: [ 0, 'Beep!', 'Boop!', "Won't your be my neighbor?", 4, 5, 6, 7, 8, 9 ]
+
+Test: "It should return [0,'Beep!','Boop!',"Won't your be my neighbor?",4,5,6,7,8,9,'Beep!'] if "10" is input"
+Code: beepBoop("10")
+Expected Output: [0,'Beep!','Boop!',"Won't your be my neighbor?",4,5,6,7,8,9,'Beep!']
+
+Test: "It should return [0,'Beep!','Boop!',"Won't your be my neighbor?",4,5,6,7,8,9,'Beep!','Beep!','Boop!',"Won't your be my neighbor?",'Beep!','Beep!','Beep!','Beep!','Beep!','Beep!','Boop!'] if "20" is input"
+Code: beepBoop("20")
+Expected Output: [0,'Beep!','Boop!',"Won't your be my neighbor?",4,5,6,7,8,9,'Beep!','Beep!','Boop!',"Won't your be my neighbor?",'Beep!','Beep!','Beep!','Beep!','Beep!','Beep!','Boop!']
+
+Test: "It should return [0,'Beep!','Boop!',"Won't your be my neighbor?",4,5,6,7,8,9,'Beep!','Beep!','Boop!',"Won't your be my neighbor?",'Beep!','Beep!','Beep!','Beep!','Beep!','Beep!','Boop!','Boop!','Boop!',"Won't your be my neighbor?",'Boop!','Boop!','Boop!','Boop!','Boop!','Boop!',"Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?"] when "32" is input"
+Code: beepBoop("32")
+Expected Output: [0,'Beep!','Boop!',"Won't your be my neighbor?",4,5,6,7,8,9,'Beep!','Beep!','Boop!',"Won't your be my neighbor?",'Beep!','Beep!','Beep!','Beep!','Beep!','Beep!','Boop!','Boop!','Boop!',"Won't your be my neighbor?",'Boop!','Boop!','Boop!','Boop!','Boop!','Boop!',"Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?"]
+
+Test: "It should return [0,'Beep!','Boop!',"Won't your be my neighbor?",4,5,6,7,8,9,'Beep!','Beep!','Boop!',"Won't your be my neighbor?",'Beep!','Beep!','Beep!','Beep!','Beep!','Beep!','Boop!','Boop!','Boop!',"Won't your be my neighbor?",'Boop!','Boop!','Boop!','Boop!','Boop!','Boop!',"Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?",40,'Beep!','Boop!',"Won't your be my neighbor?",44,45,46,47,48,49,50,'Beep!','Boop!',"Won't your be my neighbor?"] when "53" is input."
+Code: beepBoop("53")
+Expected Output: [0,'Beep!','Boop!',"Won't your be my neighbor?",4,5,6,7,8,9,'Beep!','Beep!','Boop!',"Won't your be my neighbor?",'Beep!','Beep!','Beep!','Beep!','Beep!','Beep!','Boop!','Boop!','Boop!',"Won't your be my neighbor?",'Boop!','Boop!','Boop!','Boop!','Boop!','Boop!',"Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?","Won't your be my neighbor?",40,'Beep!','Boop!',"Won't your be my neighbor?",44,45,46,47,48,49,50,'Beep!','Boop!',"Won't your be my neighbor?"]
 
 ```
 ---

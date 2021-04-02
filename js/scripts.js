@@ -6,7 +6,6 @@ function beepBoop(number) {
 
   for (let index = 1; index <= Number(number); index += 1) {
     const numbers = (""+index).split("")
-
     if (index === 3 || numbers.includes("3")) {
       outputArray.push("Won't your be my neighbor?")
       continue
