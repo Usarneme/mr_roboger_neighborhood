@@ -75,6 +75,15 @@ Test: "It should return [0,Beep] if "1" is input"
 Code: beepBoop("1")
 Expected Output: [0,"Beep"]
 
+Test: "It should return [0,Beep,Boop] if "2" is input"
+Code: beepBoop("2")
+Expected Output: [0,"Beep","Boop"]
+
+
+Test: "It should return [0,Beep] if "1" is input"
+Code: beepBoop("1")
+Expected Output: [0,"Beep"]
+
 
 
 ```

@@ -5,15 +5,21 @@ function beepBoop(number) {
   const outputArray = [0]
 
   for (let index = 1; index <= Number(number); index += 1) {
-    console.log("looping",number,index)
-    const numberArray = number.split("")
-    console.log("numberArray",numberArray)
-    if (index === 1 || numberArray.includes("1")) {
+    const numbers = (""+index).split("")
+
+    if (index === 3 || numbers.includes("3")) {
+      outputArray.push("Won't your be my neighbor?")
+      continue
+    }
+    if (index === 2 || numbers.includes("2")) {
+      outputArray.push("Boop!")
+      continue
+    }
+    if (index === 1 || numbers.includes("1")) {
       outputArray.push("Beep!")
       continue
     }
     outputArray.push(index)
   }
-  console.log(outputArray)
   return outputArray
 }
