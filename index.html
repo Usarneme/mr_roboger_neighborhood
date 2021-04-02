@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  
   <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
     crossorigin="anonymous">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  
-  <title>A fantastical adventure</title>
+  <title>Roboger's Neighborhood</title>
 </head>
 <body>
-  <section>
-
+  <section class="main">
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1 class="text-center text-uppercase">Mr. Roboger's Neighborhood!</h1>
+      </div>
+      <div class="container">
+        <form class="form-inline justify-content-center">
+          <div class="form-group align-middle m-2 mb-2 p-2">
+            <label class="align-middle mb-2" for="numberInput">Enter a Number</label>
+          </div>
+          <div class="form-group mb-2">
+            <input type="text" class="form-control" id="numberInput" required>
+          </div>
+          <div class="form-group m-2 p-2">
+            <button type="submit" class="btn btn-outline-primary btn-block text-uppercase mb-2">See Results</button>
+          </div>
+          <div class="form-group m-2 p-2">
+            <button type="reset" id="resetButton" class="btn btn-outline-primary btn-block text-uppercase mb-2">Reset Application</button>
+          </div>
+        </form>
+      </div>
+      <div class="contain">
+        <div class="results"></div>
+      </div>
+    </div>
   </section>
-
   <script
     src="https://code.jquery.com/jquery-3.6.0.js"
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
   <script
     src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-    
+    crossorigin="anonymous">
+  </script>
   <script src="js/scripts.js"></script>
 </body>
 </html>

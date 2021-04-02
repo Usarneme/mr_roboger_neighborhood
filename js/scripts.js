@@ -22,3 +22,23 @@ function beepBoop(number) {
   }
   return outputArray
 }
+
+function resetApplication() {
+  $(".results").text("").hide()
+  $("form").trigger("reset")
+}
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault()
+    const userInput = $("#numberInput").val().toString()
+    const result = beepBoop(userInput)
+    console.log(Array.isArray(result)) // we got a good array of values returned
+    if (result) {
+      resetApplication()
+      $(".results").text(result).show()
+    }
+  })
+
+  $("#resetButton").click(resetApplication)
+})
