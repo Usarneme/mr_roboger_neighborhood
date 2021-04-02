@@ -24,6 +24,7 @@ ul, li {
 
 .result-individual:last-of-type {
   border-bottom: 2px solid lightslategray;
+  margin-bottom: 4rem;
 }
 
 @media all and (min-width: 769px) {
