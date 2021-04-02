@@ -24,10 +24,7 @@ $(document).ready(function() {
     const userInput = $("#numberInput").val().toString()
     const result = beepBoop(userInput)
     if (result instanceof Error) {
-      const errorHtml = `
-        <div class="alert alert-danger" role="alert">
-          ${result}
-        </div>`
+      const errorHtml = `<div class="alert alert-danger" role="alert">${result}</div>`
       $(".results").html(errorHtml).show()
     } else {
       resetApplication()
