@@ -1,19 +1,67 @@
-# PROJECT NAME
-
+# Mr. Roboger's Neighborhood
 ## By Usarneme/Tom
 
 ---
-#### Tech Stack:
-1. HTML/CSS/JS
-2. GoLang
-3.
+
+### Project Description
+
+This project is a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number (ala FizzBuzz) with the following exceptions:
+
+* Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
+* Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
+* Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
+
+These exceptions are written from least to most important. The first exception should apply unless the second exception does, and the same with the second and third. So, for example, in your finished program,
+
+* The number 13 should be replaced with "Won't you be my neighbor?"
+* The number 21 should be replaced with "Boop".
+* The number 32 should be replaced with "Won't you be my neighbor?"
+
+A user should be able to enter a new number and see new results over and over again.
+
+> Example: If a user inputs a 5, the program should display a list of values: "0", "Beep!", "Boop", "Won't you be my neighbor?", 4, 5
 ---
-#### Instructions:
+### Tech Stack:
+1. HTML5+CSS3
+2. JavaScript/ES6+
+3. jQuery
+4. Bootstrap
+---
+### Instructions:
 1. Clone this repo: `git clone <this repo url>`
 2. Enter new directory `cd <repo dir name>`
-3. Install dependencies `npm install` or `yarn install`
-4. Begin the server `npm start` or `yarn start`
+3. Begin a web server in order to render index.html, for example:
+  * If you have python, you can use: `python2 -m SimpleHTTPServer 8080` in the project root directory
+  * Or you can use [VScode LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+  * Or whatever server you know how to run/prefer to use
+4. Open your browser and navigate to the webserver location (for example: localhost:8080)
 ---
-#### Known Issues:
-1. Please open a pull request if you have any issues!
+### Known Issues:
+1. None know.
+2. Please open a pull request if you have any issues!
 ---
+### Test Suite/Specification
+
+Describe: beepBoop()
+
+  Test: "It should return an array with a 0 if the number 0 is inputted"
+  Code: beepBoop(0);
+  Expected Output: 0
+
+  Test: "It should return an array with a 0 if the number 0 is inputted"
+  Code: beepBoop(0);
+  Expected Output: 0
+
+---
+### License is GPLv3 and I make no claim to copyright. 
+<br />
+
+> You can't steal what is freely given. Enjoy!
+
+<br />
+<br />
+<br />
+<br />
+<p align="center">
+  <small>Made with ❤️ in Portland, Oregon. </small>
+</p>
