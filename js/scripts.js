@@ -28,15 +28,30 @@ function resetApplication() {
   $("form").trigger("reset")
 }
 
+function generateSuccessHtml(resultsArray) {
+  let html = `<div class="container justify-content-center text-center m-2 p-2"><ul>`
+  resultsArray.forEach(function(element, index) {
+    html += `<li class="justify-content-center">${element}</li>`
+  })
+  html += "</ul></div>"
+  console.log(html)
+  return html
+}
+
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault()
     const userInput = $("#numberInput").val().toString()
     const result = beepBoop(userInput)
-    console.log(Array.isArray(result)) // we got a good array of values returned
-    if (result) {
+    if (result instanceof Error) {
+      const errorHtml = `
+        <div class="alert alert-danger" role="alert">
+          ${result}
+        </div>`
+      $(".results").html(errorHtml).show()
+    } else {
       resetApplication()
-      $(".results").text(result).show()
+      $(".results").html(generateSuccessHtml(result)).show()
     }
   })
 
